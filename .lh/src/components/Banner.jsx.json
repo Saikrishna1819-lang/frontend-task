@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 69,
+            "activePatchIndex": 70,
             "patches": [
                 {
                     "date": 1761152870811,
@@ -284,6 +284,10 @@
                 {
                     "date": 1761317100141,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,8 @@\n     <section className=\"min-h-[calc(100vh-80px)] flex items-center text-[#efecd6] justify-center px-4 sm:px-6 py-8 md:py-0\">\r\n       <div className=\"container mx-auto  \">\r\n         <div className=\"grid max-w-6xl mx-auto overflow-hidden shadow-2xl  lg:grid-cols-2 rounded-3xl\">\r\n \r\n-          {/* Left Content */}\r\n           <div className=\"flex flex-col bg-[url('/vec-simple.svg')] bg-no-repeat bg-bottom justify-center p-6 sm:p-8 md:p-12 lg:p-16 bg-[#2c4143] lg:pr-0 lg:py-28 order-1\">\r\n             <h1 className=\"mb-4 sm:mb-6 text-[28px] leading-[36px] lg:leading-[48px] font-medium sm:text-3xl md:text-4xl lg:text-5xl font-serif \">\r\n               The Simple Solution to Modern Lifestyle Health Issues\r\n             </h1>\r\n@@ -18,10 +17,8 @@\n                 Our Story\r\n               </button>\r\n             </div>\r\n           </div>\r\n-\r\n-          {/* Right Image */}\r\n           <div className=\"relative h-[300x] md:bg-[#2c4143] sm:h-[400px] md:h-[500px] lg:h-auto order-2\">\r\n             <img\r\n               src='https://neogreens.com/wp-content/uploads/2025/06/simple-mob.png'\r\n               alt=\"Woman enjoying a healthy green smoothie\"\r\n"
+                },
+                {
+                    "date": 1761326406788,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     <section className=\"min-h-[calc(100vh-80px)] flex items-center text-[#efecd6] justify-center px-4 sm:px-6 py-8 md:py-0\">\r\n       <div className=\"container mx-auto  \">\r\n         <div className=\"grid max-w-6xl mx-auto overflow-hidden shadow-2xl  lg:grid-cols-2 rounded-3xl\">\r\n \r\n-          <div className=\"flex flex-col bg-[url('/vec-simple.svg')] bg-no-repeat bg-bottom justify-center p-6 sm:p-8 md:p-12 lg:p-16 bg-[#2c4143] lg:pr-0 lg:py-28 order-1\">\r\n+          <div className=\"flex flex-col bg-[url('/vec-simple.svg')] bg-no-repeat bg-bottom justify-center p-6 sm:p-8 md:p-12 lg:p-16 bg-[#2c4143]  lg:py-28 order-1\">\r\n             <h1 className=\"mb-4 sm:mb-6 text-[28px] leading-[36px] lg:leading-[48px] font-medium sm:text-3xl md:text-4xl lg:text-5xl font-serif \">\r\n               The Simple Solution to Modern Lifestyle Health Issues\r\n             </h1>\r\n             <p className=\"mb-6 sm:mb-8 text-[18px]  text-sm sm:text-base md:text-lg lg:leading-relaxed opacity-90\">\r\n"
                 }
             ],
             "date": 1761152870811,

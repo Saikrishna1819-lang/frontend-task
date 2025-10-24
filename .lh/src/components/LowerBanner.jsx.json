@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 98,
+            "activePatchIndex": 99,
             "patches": [
                 {
                     "date": 1761153828479,
@@ -400,6 +400,10 @@
                 {
                     "date": 1761316931580,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   return (\r\n     <div\r\n      \r\n      className='flex flex-col md:flex-row rounded-lg md:px-14 px-4 sm:px-6 lg:px-[12%] bg-[#efecd6] mt-20'>\r\n-        {/* Left banner - Full width on mobile, half width on tablet and desktop */}\r\n+        {/* Left banner  */}\r\n         <div className='w-full  md:w-1/2 py-6 text-center md:text-left sm:py-10 md:py-16 lg:py-12 lg:px-10'>\r\n             <div className=\"\">\r\n                 <p className=\"text-3xl sm:text-4xl text-[#2c4143] font-semibold\">When You're Ready, NeoGreens is Here.</p>\r\n                 <p className='mt-4 sm:mt-6 text-[#2c4143] text-[16px] sm:text-[18px] font-normal'>One clean, simple habit to help you feel better every day.</p>\r\n"
+                },
+                {
+                    "date": 1761326541792,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n      className='flex flex-col md:flex-row rounded-lg md:px-14 px-4 sm:px-6 lg:px-[12%] bg-[#efecd6] mt-20'>\r\n         {/* Left banner  */}\r\n         <div className='w-full  md:w-1/2 py-6 text-center md:text-left sm:py-10 md:py-16 lg:py-12 lg:px-10'>\r\n             <div className=\"\">\r\n-                <p className=\"text-3xl sm:text-4xl text-[#2c4143] font-semibold\">When You're Ready, NeoGreens is Here.</p>\r\n+                <p className=\"text-3xl sm:text-4xl font-serif text-[#2c4143] font-semibold\">When You're Ready, NeoGreens is Here.</p>\r\n                 <p className='mt-4 sm:mt-6 text-[#2c4143] text-[16px] sm:text-[18px] font-normal'>One clean, simple habit to help you feel better every day.</p>\r\n             </div>\r\n             <div className=\"flex justify-center md:justify-start\">\r\n                 <button className=\"px-6 sm:px-8 py-3 sm:py-4 font-semibold rounded-full text-[#2c4143] bg-[#8e968c] mt-4 sm:mt-5 transition-all transform hover:scale-105\">\r\n"
                 }
             ],
             "date": 1761153828478,
