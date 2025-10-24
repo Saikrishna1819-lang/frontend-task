@@ -1,0 +1,54 @@
+{
+    "sourceFile": "src/index.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1761049677656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1761280787304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,15 @@\n-@import \"tailwindcss\"\n\\ No newline at end of file\n+@import \"tailwindcss\"\r\n+\r\n+/* Custom CSS variables for Playfair Display */\r\n+@theme {\r\n+  --font-playfair: \"Playfair Display\", serif;\r\n+  \r\n+  /* Custom font sizes */\r\n+  --text-58: 58px;\r\n+  \r\n+  /* Custom line heights */\r\n+  --leading-70: 70px;\r\n+  \r\n+  /* Custom colors */\r\n+  --color-custom-beige: rgb(239, 236, 214);\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761280845800,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,3 @@\n @import \"tailwindcss\"\r\n \r\n /* Custom CSS variables for Playfair Display */\r\n-@theme {\r\n-  --font-playfair: \"Playfair Display\", serif;\r\n-  \r\n-  /* Custom font sizes */\r\n-  --text-58: 58px;\r\n-  \r\n-  /* Custom line heights */\r\n-  --leading-70: 70px;\r\n-  \r\n-  /* Custom colors */\r\n-  --color-custom-beige: rgb(239, 236, 214);\r\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761281525880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,14 @@\n-@import \"tailwindcss\"\r\n+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');\r\n+@import \"tailwindcss\";\r\n \r\n-/* Custom CSS variables for Playfair Display */\r\n+@theme {\r\n+  \r\n+  --font-playfair: \"Playfair Display\", serif;\r\n+}\r\n+\r\n+/* Apply globally (optional) */\r\n+* {\r\n+  font-family: var(--font-playfair);\r\n+}\r\n+\r\n+\r\n"
+                },
+                {
+                    "date": 1761282108397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,12 @@\n @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');\r\n+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');\r\n @import \"tailwindcss\";\r\n \r\n @theme {\r\n   \r\n   --font-playfair: \"Playfair Display\", serif;\r\n+   --font-raleway: \"Raleway\", sans-serif;\r\n }\r\n \r\n /* Apply globally (optional) */\r\n * {\r\n"
+                },
+                {
+                    "date": 1761282178341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,7 @@\n   --font-playfair: \"Playfair Display\", serif;\r\n    --font-raleway: \"Raleway\", sans-serif;\r\n }\r\n \r\n-/* Apply globally (optional) */\r\n-* {\r\n-  font-family: var(--font-playfair);\r\n-}\r\n \r\n \r\n+\r\n"
+                },
+                {
+                    "date": 1761282436316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,8 @@\n   --font-playfair: \"Playfair Display\", serif;\r\n    --font-raleway: \"Raleway\", sans-serif;\r\n }\r\n \r\n+* {\r\n+  font-family: var(--font-raleway);\r\n+}\r\n \r\n-\r\n-\r\n"
+                },
+                {
+                    "date": 1761283173650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,10 @@\n @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');\r\n @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');\r\n @import \"tailwindcss\";\r\n \r\n-@theme {\r\n-  \r\n-  --font-playfair: \"Playfair Display\", serif;\r\n-   --font-raleway: \"Raleway\", sans-serif;\r\n-}\r\n \r\n+\r\n * {\r\n-  font-family: var(--font-raleway);\r\n+  font-family:Raleway\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1761283518309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,14 @@\n @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');\r\n @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');\r\n @import \"tailwindcss\";\r\n \r\n+@theme {\r\n+    --color-primary: #5f6FFF;\r\n+    --font-sans: 'Raleway', sans-serif;\r\n+    --font-serif: 'Playfair Display', serif;\r\n+}\r\n \r\n-\r\n * {\r\n-  font-family:Raleway\r\n+    font-family: Raleway;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1761283597434,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,5 @@\n     --font-sans: 'Raleway', sans-serif;\r\n     --font-serif: 'Playfair Display', serif;\r\n }\r\n \r\n-* {\r\n-    font-family: Raleway;\r\n-}\r\n \r\n"
+                }
+            ],
+            "date": 1761049677656,
+            "name": "Commit-0",
+            "content": "@import \"tailwindcss\""
+        }
+    ]
+}

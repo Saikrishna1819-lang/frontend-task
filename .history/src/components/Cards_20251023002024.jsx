@@ -1,0 +1,190 @@
+// import React from 'react'
+
+// const Cards = () => {
+
+
+//     const cards = [
+//     {
+//       icon:"https://neogreens.com/wp-content/uploads/2025/06/Group-4962.svg",
+//       text: "Feel Foggy or Unfocused?",
+      
+//       des:"Designed to support mental clarity with B12 and adaptogens.",
+//       image: "https://neogreens.com/wp-content/uploads/2025/09/Image-1-3.png"
+//     },
+//     {
+//       icon:"https://neogreens.com/wp-content/uploads/2025/06/Group-4961.svg",
+//       text: "Bloating or Indigestion?",
+    
+//       des:"Aids digestion with probiotics and digestive enzymes.",
+//       image: "https://neogreens.com/wp-content/uploads/2025/09/Image-2.png"
+//     },
+//     {
+//       icon:"https://neogreens.com/wp-content/uploads/2025/06/Group-4962-1.svg",
+//       text: "Constant Energy Crashes?",
+//       des:"Supports sustained energy with clean, plant-based nutrients.",
+
+//       image: "https://neogreens.com/wp-content/uploads/2025/09/Image-3.png"
+//     },
+//     {
+//       icon:"https://neogreens.com/wp-content/uploads/2025/06/Group-4962-2.svg",
+//       text: "Busy Routines messing up nutrition?",
+//       des:"One simple scoop a day keeps your essentials covered.",
+//       image: "https://neogreens.com/wp-content/uploads/2025/09/Image-4.png"
+//     },
+//     {
+//       icon:"https://neogreens.com/wp-content/uploads/2025/06/Group-4962-3.svg",
+//       text: "Too many supplements to choose from?",
+//       des:"NeoGreens simplifies it all. Just one powder, once a day.",
+//       image: "https://neogreens.com/wp-content/uploads/2025/09/Image-5.png"
+//     },
+//      {
+//       icon:"https://neogreens.com/wp-content/uploads/2025/06/Group-4962-4.svg",
+//       text: "Frequent body pains and aches?",
+      
+//       des:"akes care of essential vitamin deficiencies to",
+//       image: "https://neogreens.com/wp-content/uploads/2025/09/Image-6.png"
+//     }
+//   ];
+//   return (
+//     <div className='bg-[#fdfcf9] flex  px-[12%] py-20'>
+//         <div className='w-min-1/2  px-10'>
+//         <h1 className='text-5xl font-serif mb-5 font-medium'>Backed by Nature. Built for Your Routine.</h1>
+//         <p className='mb-5 text-[18px]'>NeoGreens goes where you go - from home to the office to the gym. One scoop a day will help you overcome all your wellness roadblocks with ease.</p>
+//          <button className="px-8 py-4 mb-16   font-semibold rounded-full text-[#2c4143] bg-[#8e968c]  mt-5 transition-all transform hover:scale-105">
+//             Comming Soon
+//           </button>
+//           <div>
+//             <img src="https://neogreens.com/wp-content/uploads/2025/09/nature.png"></img>
+//           </div>
+
+//         </div>
+//         <div className='flex w-min-[1/2] flex-col gap-10'>
+//             {
+//                 cards.map((item)=>(
+//                     <div className='flex flex-col shadow-2xl p-8 rounded-xl gap-4' >
+//                         <div className='flex gap-4'>
+//                             <img src={item.icon}></img>
+//                             <h1 className='flex-1'>{item.text}</h1>
+//                         </div>
+//                         <p>{item.des}</p>
+//                         <img className='' src={item.image}></img>
+//                     </div>
+//                 ))
+//             }
+
+//         </div>
+//     </div>
+//   )
+// }
+
+// export default Cards
+
+
+
+
+import React from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+
+const Cards = () => {
+  const cards = [
+    {
+      icon: "https://neogreens.com/wp-content/uploads/2025/06/Group-4962.svg",
+      text: "Feel Foggy or Unfocused?",
+      des: "Designed to support mental clarity with B12 and adaptogens.",
+      image: "https://neogreens.com/wp-content/uploads/2025/09/Image-1-3.png",
+    },
+    {
+      icon: "https://neogreens.com/wp-content/uploads/2025/06/Group-4961.svg",
+      text: "Bloating or Indigestion?",
+      des: "Aids digestion with probiotics and digestive enzymes.",
+      image: "https://neogreens.com/wp-content/uploads/2025/09/Image-2.png",
+    },
+    {
+      icon: "https://neogreens.com/wp-content/uploads/2025/06/Group-4962-1.svg",
+      text: "Constant Energy Crashes?",
+      des: "Supports sustained energy with clean, plant-based nutrients.",
+      image: "https://neogreens.com/wp-content/uploads/2025/09/Image-3.png",
+    },
+    {
+      icon: "https://neogreens.com/wp-content/uploads/2025/06/Group-4962-2.svg",
+      text: "Busy Routines messing up nutrition?",
+      des: "One simple scoop a day keeps your essentials covered.",
+      image: "https://neogreens.com/wp-content/uploads/2025/09/Image-4.png",
+    },
+    {
+      icon: "https://neogreens.com/wp-content/uploads/2025/06/Group-4962-3.svg",
+      text: "Too many supplements to choose from?",
+      des: "NeoGreens simplifies it all. Just one powder, once a day.",
+      image: "https://neogreens.com/wp-content/uploads/2025/09/Image-5.png",
+    },
+    {
+      icon: "https://neogreens.com/wp-content/uploads/2025/06/Group-4962-4.svg",
+      text: "Frequent body pains and aches?",
+      des: "Takes care of essential vitamin deficiencies to reduce fatigue.",
+      image: "https://neogreens.com/wp-content/uploads/2025/09/Image-6.png",
+    },
+  ];
+
+  return (
+    <section className="bg-[#fdfcf9] px-[12%] py-20">
+      <div className="flex gap-10 items-start relative">
+        {/* LEFT SECTION */}
+        <div className="w-1/2 pr-10 sticky top-24 self-start">
+          <h1 className="text-5xl font-serif mb-5 font-medium">
+            Backed by Nature. Built for Your Routine.
+          </h1>
+          <p className="mb-5 text-[18px]">
+            NeoGreens goes where you go - from home to the office to the gym. One scoop a day will help you overcome all your wellness roadblocks with ease.
+          </p>
+          <button className="px-8 py-4 mb-16 font-semibold rounded-full text-[#2c4143] bg-[#8e968c] mt-5 transition-all transform hover:scale-105">
+            Coming Soon
+          </button>
+          <img
+            src="https://neogreens.com/wp-content/uploads/2025/09/nature.png"
+            alt="nature"
+            className="max-w-full"
+          />
+        </div>
+
+        {/* RIGHT SECTION */}
+        <div className="w-1/2 relative">
+          {cards.map((item, index) => (
+            <ScrollCard key={index} item={item} index={index} total={cards.length} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+/* --- Each card animates smoothly on scroll --- */
+const ScrollCard = ({ item, index, total }) => {
+  const ref = React.useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "-40%"]);
+  const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [1, 1, 0.5, 0]);
+
+  return (
+    <motion.div
+      ref={ref}
+      style={{ y, opacity }}
+      className="flex flex-col shadow-2xl p-8 rounded-xl gap-4 bg-white absolute left-0 right-0 top-0"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
+      <div className="flex gap-4 items-center">
+        <img src={item.icon} alt="icon" className="w-10 h-10" />
+        <h1 className="text-lg font-semibold">{item.text}</h1>
+      </div>
+      <p>{item.des}</p>
+      <img src={item.image} alt="card" className="rounded-lg" />
+    </motion.div>
+  );
+};
+
+export default Cards;

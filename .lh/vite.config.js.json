@@ -1,0 +1,26 @@
+{
+    "sourceFile": "vite.config.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1761049647109,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1761279635533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,33 @@\n-import { defineConfig } from 'vite'\n-import react from '@vitejs/plugin-react'\n-import tailwindcss from '@tailwindcss/vite'\n+// import { defineConfig } from 'vite'\n+// import react from '@vitejs/plugin-react'\n+// import tailwindcss from '@tailwindcss/vite'\n \n-// https://vite.dev/config/\n+// // https://vite.dev/config/\n+// export default defineConfig({\n+//   plugins: [react(),tailwindcss()],\n+// })\n+\n+\n+\n+import { defineConfig } from \"vite\";\n+import react from \"@vitejs/plugin-react\";\n+import tailwindcss from \"@tailwindcss/vite\";\n+\n export default defineConfig({\n-  plugins: [react(),tailwindcss()],\n-})\n+  plugins: [\n+    react(),\n+    tailwindcss({\n+      theme: {\n+        extend: {\n+          fontFamily: {\n+            playfair: ['\"Playfair Display\"', \"serif\"],\n+          },\n+          colors: {\n+            cream: \"#efecd6\",\n+            darkgreen: \"#2d413e\",\n+          },\n+        },\n+      },\n+    }),\n+  ],\n+});\n"
+                },
+                {
+                    "date": 1761280814919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,33 +1,8 @@\n-// import { defineConfig } from 'vite'\n-// import react from '@vitejs/plugin-react'\n-// import tailwindcss from '@tailwindcss/vite'\n+import { defineConfig } from 'vite'\n+import react from '@vitejs/plugin-react'\n+import tailwindcss from '@tailwindcss/vite'\n \n-// // https://vite.dev/config/\n-// export default defineConfig({\n-//   plugins: [react(),tailwindcss()],\n-// })\n-\n-\n-\n-import { defineConfig } from \"vite\";\n-import react from \"@vitejs/plugin-react\";\n-import tailwindcss from \"@tailwindcss/vite\";\n-\n+// https://vite.dev/config/\n export default defineConfig({\n-  plugins: [\n-    react(),\n-    tailwindcss({\n-      theme: {\n-        extend: {\n-          fontFamily: {\n-            playfair: ['\"Playfair Display\"', \"serif\"],\n-          },\n-          colors: {\n-            cream: \"#efecd6\",\n-            darkgreen: \"#2d413e\",\n-          },\n-        },\n-      },\n-    }),\n-  ],\n-});\n+  plugins: [react(),tailwindcss()],\n+})\n"
+                }
+            ],
+            "date": 1761049647109,
+            "name": "Commit-0",
+            "content": "import { defineConfig } from 'vite'\nimport react from '@vitejs/plugin-react'\nimport tailwindcss from '@tailwindcss/vite'\n\n// https://vite.dev/config/\nexport default defineConfig({\n  plugins: [react(),tailwindcss()],\n})\n"
+        }
+    ]
+}

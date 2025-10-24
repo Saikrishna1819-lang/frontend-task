@@ -1,0 +1,34 @@
+{
+    "sourceFile": "src/pages/Home.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1761052788522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1761059248441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,12 @@\n import React from 'react'\r\n+import Hero from '../components/Hero'\r\n \r\n const Home = () => {\r\n   return (\r\n-    <div>Home</div>\r\n+    <div>\r\n+        <Hero/>\r\n+    </div>\r\n   )\r\n }\r\n \r\n export default Home\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761059461075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,13 @@\n import React from 'react'\r\n import Hero from '../components/Hero'\r\n+import FeaturesBar from '../components/FeaturesBar'\r\n \r\n const Home = () => {\r\n   return (\r\n     <div>\r\n         <Hero/>\r\n+        <FeaturesBar/>\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1761316770592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n const Home = () => {\r\n   return (\r\n     <div>\r\n         <Hero/>\r\n-        <FeaturesBar/>\r\n+  \r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1761317187127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,14 @@\n-import React from 'react'\r\n-import Hero from '../components/Hero'\r\n-import FeaturesBar from '../components/FeaturesBar'\r\n+// import React from 'react'\r\n+// import Hero from '../components/Hero'\r\n+// import FeaturesBar from '../components/FeaturesBar'\r\n \r\n-const Home = () => {\r\n-  return (\r\n-    <div>\r\n-        <Hero/>\r\n+// const Home = () => {\r\n+//   return (\r\n+//     <div>\r\n\\ No newline at end of file\n+//         <Hero/>\r\n   \r\n-    </div>\r\n-  )\r\n-}\r\n+//     </div>\r\n+//   )\r\n+// }\r\n \r\n-export default Home\n+// export default Home\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1761052788522,
+            "name": "Commit-0",
+            "content": "import React from 'react'\r\n\r\nconst Home = () => {\r\n  return (\r\n    <div>Home</div>\r\n  )\r\n}\r\n\r\nexport default Home"
+        }
+    ]
+}

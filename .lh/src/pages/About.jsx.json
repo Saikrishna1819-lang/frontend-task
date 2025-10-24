@@ -1,0 +1,50 @@
+{
+    "sourceFile": "src/pages/About.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1761052801206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1761056137970,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n import React from 'react'\r\n \r\n const About = () => {\r\n   return (\r\n-    <div>About</div>\r\n+    <div className='w-full h-[400px] bg-red-500'>\r\n+    </div>\r\n   )\r\n }\r\n \r\n export default About\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761056275893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n \r\n const About = () => {\r\n   return (\r\n     <div className='w-full h-[400px] bg-red-500'>\r\n+        hello\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1761056309548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n import React from 'react'\r\n \r\n const About = () => {\r\n   return (\r\n-    <div className='w-full h-[400px] bg-red-500'>\r\n-        hello\r\n+    <div>About\r\n+\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1761056775642,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from 'react'\r\n \r\n const About = () => {\r\n   return (\r\n-    <div>About\r\n+    <div className='pt-[80px]'>About\r\n \r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1761056804253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from 'react'\r\n \r\n const About = () => {\r\n   return (\r\n-    <div className='pt-[80px]'>About\r\n+    <div className='pt-26'>About\r\n \r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1761056816947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from 'react'\r\n \r\n const About = () => {\r\n   return (\r\n-    <div className='pt-26'>About\r\n+    <div className='mt-96'>About\r\n \r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1761056881553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from 'react'\r\n \r\n const About = () => {\r\n   return (\r\n-    <div className='mt-96'>About\r\n+    <div className='pt-52 text-red-400' >About\r\n \r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1761057124243,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from 'react'\r\n \r\n const About = () => {\r\n   return (\r\n-    <div className='pt-52 text-red-400' >About\r\n+    <div className='text-red-400' >About\r\n \r\n     </div>\r\n   )\r\n }\r\n"
+                }
+            ],
+            "date": 1761052801206,
+            "name": "Commit-0",
+            "content": "import React from 'react'\r\n\r\nconst About = () => {\r\n  return (\r\n    <div>About</div>\r\n  )\r\n}\r\n\r\nexport default About"
+        }
+    ]
+}

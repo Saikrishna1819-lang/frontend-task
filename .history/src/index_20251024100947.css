@@ -1,0 +1,15 @@
+@import "tailwindcss"
+
+/* Custom CSS variables for Playfair Display */
+@theme {
+  --font-playfair: "Playfair Display", serif;
+  
+  /* Custom font sizes */
+  --text-58: 58px;
+  
+  /* Custom line heights */
+  --leading-70: 70px;
+  
+  /* Custom colors */
+  --color-custom-beige: rgb(239, 236, 214);
+}

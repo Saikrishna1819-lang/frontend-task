@@ -1,0 +1,158 @@
+{
+    "sourceFile": "src/App.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 35,
+            "patches": [
+                {
+                    "date": 1761049513259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1761049708921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from 'react'\n \n const App = () => {\n   return (\n-    <div>App</div>\n+    <div className='text-red-400'>App</div>\n   )\n }\n \n export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761049720161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from 'react'\n \n const App = () => {\n   return (\n-    <div className='text-red-400'>App</div>\n+    <div>App</div>\n   )\n }\n \n export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761052282846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,12 @@\n import React from 'react'\n+import Navbar from './components/Navbar'\n \n const App = () => {\n   return (\n-    <div>App</div>\n+    <div>\n+      <Navbar/>\n+    </div>\n   )\n }\n \n export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761052901609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,20 @@\n import React from 'react'\n import Navbar from './components/Navbar'\n+import { Routes,Route } from 'react-router-dom'\n+import Home from './pages/Home'\n+import About from './pages/About'\n+import Contact from './pages/Contact'\n \n const App = () => {\n   return (\n     <div>\n       <Navbar/>\n+      <Routes>\n+        <Route path='/' element={<Home/>}></Route>\n+        <Route path='/aboutUS' element={<About/>}></Route>\n+        <Route path='/contact' element={<Contact/>}></Route>\n+      </Routes>\n     </div>\n   )\n }\n \n"
+                },
+                {
+                    "date": 1761056034569,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     <div>\n       <Navbar/>\n       <Routes>\n         <Route path='/' element={<Home/>}></Route>\n-        <Route path='/aboutUS' element={<About/>}></Route>\n+        <Route path='/aboutUs' element={<About/>}></Route>\n         <Route path='/contact' element={<Contact/>}></Route>\n       </Routes>\n     </div>\n   )\n"
+                },
+                {
+                    "date": 1761056188238,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,21 +1,21 @@\n-import React from 'react'\n-import Navbar from './components/Navbar'\n-import { Routes,Route } from 'react-router-dom'\n-import Home from './pages/Home'\n-import About from './pages/About'\n-import Contact from './pages/Contact'\n+  import React from 'react'\n+  import Navbar from './components/Navbar'\n+  import { Routes,Route } from 'react-router-dom'\n+  import Home from './pages/Home'\n+  import About from './pages/About'\n+  import Contact from './pages/Contact'\n \n-const App = () => {\n-  return (\n-    <div>\n-      <Navbar/>\n-      <Routes>\n-        <Route path='/' element={<Home/>}></Route>\n-        <Route path='/aboutUs' element={<About/>}></Route>\n-        <Route path='/contact' element={<Contact/>}></Route>\n\\ No newline at end of file\n-      </Routes>\n-    </div>\n-  )\n-}\n+  const App = () => {\n+    return (\n+      <div>\n+        <Navbar/>\n+        <Routes>\n+          <Route path='/' element={<Home/>}></Route>\n+          <Route path='/aboutUs' element={<About/>}></Route>\n+          <Route path='/contact' element={<Contact/>}></Route>\n+        </Routes>\n+      </div>\n+    )\n+  }\n \n-export default App\n+  export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761056322633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n   const App = () => {\n     return (\n       <div>\n-        <Navbar/>\n+        {/* <Navbar/> */}\n         <Routes>\n           <Route path='/' element={<Home/>}></Route>\n           <Route path='/aboutUs' element={<About/>}></Route>\n           <Route path='/contact' element={<Contact/>}></Route>\n"
+                },
+                {
+                    "date": 1761056330383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \n   const App = () => {\n     return (\n       <div>\n-        {/* <Navbar/> */}\n+        <Navbar/>\n         <Routes>\n           <Route path='/' element={<Home/>}></Route>\n           <Route path='/aboutUs' element={<About/>}></Route>\n           <Route path='/contact' element={<Contact/>}></Route>\n"
+                },
+                {
+                    "date": 1761056351885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,21 @@\n+  import React from 'react'\n+  import Navbar from './components/Navbar'\n+  import { Routes,Route } from 'react-router-dom'\n+  import Home from './pages/Home'\n+  import About from './pages/About'\n+  import Contact from './pages/Contact'\n+\n+  const App = () => {\n+    return (\n+      <div className='flex flex-col'>\n+        <Navbar/>\n+        <Routes>\n+          <Route path='/' element={<Home/>}></Route>\n+          <Route path='/aboutUs' element={<About/>}></Route>\n+          <Route path='/contact' element={<Contact/>}></Route>\n+        </Routes>\n+      </div>\n+    )\n+  }\n+\n+  export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761056565619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,33 +10,12 @@\n       <div className='flex flex-col'>\n         <Navbar/>\n         <Routes>\n           <Route path='/' element={<Home/>}></Route>\n-          <Route path='/aboutUs' element={<About/>}></Route>\n+          <Route path='/aboutUs' element={<Navbar/>}></Route>\n           <Route path='/contact' element={<Contact/>}></Route>\n         </Routes>\n       </div>\n     )\n   }\n \n-  export default App\n-  import React from 'react'\n-  import Navbar from './components/Navbar'\n-  import { Routes,Route } from 'react-router-dom'\n-  import Home from './pages/Home'\n-  import About from './pages/About'\n-  import Contact from './pages/Contact'\n-\n-  const App = () => {\n-    return (\n-      <div>\n-        <Navbar/>\n-        <Routes>\n-          <Route path='/' element={<Home/>}></Route>\n-          <Route path='/aboutUs' element={<About/>}></Route>\n-          <Route path='/contact' element={<Contact/>}></Route>\n-        </Routes>\n-      </div>\n-    )\n-  }\n-\n   export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761056943862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,13 +6,13 @@\n   import Contact from './pages/Contact'\n \n   const App = () => {\n     return (\n-      <div className='flex flex-col'>\n+      <div className='flex flex-col pt-[80px]'>\n         <Navbar/>\n         <Routes>\n           <Route path='/' element={<Home/>}></Route>\n-          <Route path='/aboutUs' element={<Navbar/>}></Route>\n+          <Route path='/aboutUs' element={<About/>}></Route>\n           <Route path='/contact' element={<Contact/>}></Route>\n         </Routes>\n       </div>\n     )\n"
+                },
+                {
+                    "date": 1761057077425,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,15 +6,18 @@\n   import Contact from './pages/Contact'\n \n   const App = () => {\n     return (\n-      <div className='flex flex-col pt-[80px]'>\n+      <div className='flex flex-col'>\n         <Navbar/>\n-        <Routes>\n+        <div className='px-[80px]'>\n+          <Routes>\n           <Route path='/' element={<Home/>}></Route>\n           <Route path='/aboutUs' element={<About/>}></Route>\n           <Route path='/contact' element={<Contact/>}></Route>\n         </Routes>\n+        </div>\n+        \n       </div>\n     )\n   }\n \n"
+                },
+                {
+                    "date": 1761057185207,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   const App = () => {\n     return (\n       <div className='flex flex-col'>\n         <Navbar/>\n-        <div className='px-[80px]'>\n+        <div className='pt-[80px]'>\n           <Routes>\n           <Route path='/' element={<Home/>}></Route>\n           <Route path='/aboutUs' element={<About/>}></Route>\n           <Route path='/contact' element={<Contact/>}></Route>\n"
+                },
+                {
+                    "date": 1761057213521,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   const App = () => {\n     return (\n       <div className='flex flex-col'>\n         <Navbar/>\n-        <div className='pt-[80px]'>\n+        <div className='pt-[200px]'>\n           <Routes>\n           <Route path='/' element={<Home/>}></Route>\n           <Route path='/aboutUs' element={<About/>}></Route>\n           <Route path='/contact' element={<Contact/>}></Route>\n"
+                },
+                {
+                    "date": 1761057330279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   const App = () => {\n     return (\n       <div className='flex flex-col'>\n         <Navbar/>\n-        <div className='pt-[200px]'>\n+        <div className='mt-[80px]'>\n           <Routes>\n           <Route path='/' element={<Home/>}></Route>\n           <Route path='/aboutUs' element={<About/>}></Route>\n           <Route path='/contact' element={<Contact/>}></Route>\n"
+                },
+                {
+                    "date": 1761133097425,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,18 +6,13 @@\n   import Contact from './pages/Contact'\n \n   const App = () => {\n     return (\n-      <div className='flex flex-col'>\n+      <div className='min-h-screen bg-white'>\n         <Navbar/>\n-        <div className='mt-[80px]'>\n-          <Routes>\n-          <Route path='/' element={<Home/>}></Route>\n-          <Route path='/aboutUs' element={<About/>}></Route>\n-          <Route path='/contact' element={<Contact/>}></Route>\n-        </Routes>\n-        </div>\n+        <Hero/>\n         \n+        \n       </div>\n     )\n   }\n \n"
+                },
+                {
+                    "date": 1761133443791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n   import { Routes,Route } from 'react-router-dom'\n   import Home from './pages/Home'\n   import About from './pages/About'\n   import Contact from './pages/Contact'\n+import Hero from './components/Hero'\n \n   const App = () => {\n     return (\n       <div className='min-h-screen bg-white'>\n"
+                },
+                {
+                    "date": 1761133459567,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,7 @@\n   import React from 'react'\n   import Navbar from './components/Navbar'\n-  import { Routes,Route } from 'react-router-dom'\n-  import Home from './pages/Home'\n-  import About from './pages/About'\n-  import Contact from './pages/Contact'\n+ \n import Hero from './components/Hero'\n \n   const App = () => {\n     return (\n"
+                },
+                {
+                    "date": 1761134886522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,16 @@\n   import React from 'react'\n   import Navbar from './components/Navbar'\n  \n import Hero from './components/Hero'\n+import Badges from './components/Badges'\n \n   const App = () => {\n     return (\n       <div className='min-h-screen bg-white'>\n         <Navbar/>\n         <Hero/>\n+        <Badges/>\n         \n         \n       </div>\n     )\n"
+                },
+                {
+                    "date": 1761136444460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,15 +2,17 @@\n   import Navbar from './components/Navbar'\n  \n import Hero from './components/Hero'\n import Badges from './components/Badges'\n+import Benefits from './components/Benifits'\n \n   const App = () => {\n     return (\n       <div className='min-h-screen bg-white'>\n         <Navbar/>\n         <Hero/>\n         <Badges/>\n+        <Benefits/>\n         \n         \n       </div>\n     )\n"
+                },
+                {
+                    "date": 1761141000777,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,16 +3,18 @@\n  \n import Hero from './components/Hero'\n import Badges from './components/Badges'\n import Benefits from './components/Benifits'\n+import { Table } from 'lucide-react'\n \n   const App = () => {\n     return (\n       <div className='min-h-screen bg-white'>\n         <Navbar/>\n         <Hero/>\n         <Badges/>\n         <Benefits/>\n+        <Table/>\n         \n         \n       </div>\n     )\n"
+                },
+                {
+                    "date": 1761141036644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         <Navbar/>\n         <Hero/>\n         <Badges/>\n         <Benefits/>\n-        <Table/>\n+        {/* <Table/> */}\n         \n         \n       </div>\n     )\n"
+                },
+                {
+                    "date": 1761141051019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         <Navbar/>\n         <Hero/>\n         <Badges/>\n         <Benefits/>\n-        {/* <Table/> */}\n+        <Table/>\n         \n         \n       </div>\n     )\n"
+                },
+                {
+                    "date": 1761141393379,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,12 @@\n  \n import Hero from './components/Hero'\n import Badges from './components/Badges'\n import Benefits from './components/Benifits'\n-import { Table } from 'lucide-react'\n+import Table from './components/Table'\n \n+\n+\n   const App = () => {\n     return (\n       <div className='min-h-screen bg-white'>\n         <Navbar/>\n"
+                },
+                {
+                    "date": 1761146246256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n import Hero from './components/Hero'\n import Badges from './components/Badges'\n import Benefits from './components/Benifits'\n import Table from './components/Table'\n+import Testimonials from './components/Testimonials'\n \n \n \n   const App = () => {\n@@ -15,8 +16,9 @@\n         <Hero/>\n         <Badges/>\n         <Benefits/>\n         <Table/>\n+        <Testimonials/>\n         \n         \n       </div>\n     )\n"
+                },
+                {
+                    "date": 1761149106233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n import Badges from './components/Badges'\n import Benefits from './components/Benifits'\n import Table from './components/Table'\n import Testimonials from './components/Testimonials'\n+import Footer from './components/Footer'\n \n \n \n   const App = () => {\n@@ -17,8 +18,9 @@\n         <Badges/>\n         <Benefits/>\n         <Table/>\n         <Testimonials/>\n+        <Footer/>\n         \n         \n       </div>\n     )\n"
+                },
+                {
+                    "date": 1761149488506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \n \n   const App = () => {\n     return (\n-      <div className='min-h-screen bg-white'>\n+      <div className='min-h-screen bg-white px-[10%]'>\n         <Navbar/>\n         <Hero/>\n         <Badges/>\n         <Benefits/>\n"
+                },
+                {
+                    "date": 1761149530285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \n \n   const App = () => {\n     return (\n-      <div className='min-h-screen bg-white px-[10%]'>\n+      <div className='min-h-screen bg-white'>\n         <Navbar/>\n         <Hero/>\n         <Badges/>\n         <Benefits/>\n"
+                },
+                {
+                    "date": 1761152884322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,31 @@\n+  import React from 'react'\n+  import Navbar from './components/Navbar'\n+ \n+import Hero from './components/Hero'\n+import Badges from './components/Badges'\n+import Benefits from './components/Benifits'\n+import Table from './components/Table'\n+import Testimonials from './components/Testimonials'\n+import Footer from './components/Footer'\n+import Banner from './components/Banner'\n+\n+\n+\n+  const App = () => {\n+    return (\n+      <div className='min-h-screen bg-white'>\n+        <Navbar/>\n+        <Hero/>\n+        <Badges/>\n+        <Benefits/>\n+        <Table/>\n+        <Testimonials/>\n+        <Banner/>\n+        <Footer/>\n+        \n+        \n+      </div>\n+    )\n+  }\n+\n+  export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761152907051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,43 +18,15 @@\n         <Hero/>\n         <Badges/>\n         <Benefits/>\n         <Table/>\n+          <Banner/>\n         <Testimonials/>\n-        <Banner/>\n+      \n         <Footer/>\n         \n         \n       </div>\n     )\n   }\n \n-  export default App\n-  import React from 'react'\n-  import Navbar from './components/Navbar'\n- \n-import Hero from './components/Hero'\n-import Badges from './components/Badges'\n-import Benefits from './components/Benifits'\n-import Table from './components/Table'\n-import Testimonials from './components/Testimonials'\n-import Footer from './components/Footer'\n-\n-\n-\n-  const App = () => {\n-    return (\n-      <div className='min-h-screen bg-white'>\n-        <Navbar/>\n-        <Hero/>\n-        <Badges/>\n-        <Benefits/>\n-        <Table/>\n-        <Testimonials/>\n-        <Footer/>\n-        \n-        \n-      </div>\n-    )\n-  }\n-\n   export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761153847700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n import Table from './components/Table'\n import Testimonials from './components/Testimonials'\n import Footer from './components/Footer'\n import Banner from './components/Banner'\n+import LowerBanner from './components/LowerBanner'\n \n \n \n   const App = () => {\n@@ -20,8 +21,9 @@\n         <Benefits/>\n         <Table/>\n           <Banner/>\n         <Testimonials/>\n+        <LowerBanner/>\n       \n         <Footer/>\n         \n         \n"
+                },
+                {
+                    "date": 1761155864379,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n import Testimonials from './components/Testimonials'\n import Footer from './components/Footer'\n import Banner from './components/Banner'\n import LowerBanner from './components/LowerBanner'\n+import Cards from './components/Cards'\n \n \n \n   const App = () => {\n@@ -17,8 +18,9 @@\n       <div className='min-h-screen bg-white'>\n         <Navbar/>\n         <Hero/>\n         <Badges/>\n+        <Cards/>\n         <Benefits/>\n         <Table/>\n           <Banner/>\n         <Testimonials/>\n"
+                },
+                {
+                    "date": 1761230775781,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,36 @@\n+  import React from 'react'\n+  import Navbar from './components/Navbar'\n+ \n+import Hero from './components/Hero'\n+import Badges from './components/Badges'\n+import Benefits from './components/Benifits'\n+import Table from './components/Table'\n+import Testimonials from './components/Testimonials'\n+import Footer from './components/Footer'\n+import Banner from './components/Banner'\n+import LowerBanner from './components/LowerBanner'\n+import Cards from './components/Cards'\n+\n+\n+\n+  const App = () => {\n+    return (\n+      <div className='min-h-screen bg-white'>\n+        <Navbar/>\n+        <Hero/>\n+        <Badges/>\n+        {/* <Cards/> */}\n+        <Benefits/>\n+        <Table/>\n+          <Banner/>\n+        <Testimonials/>\n+        <LowerBanner/>\n+      \n+        <Footer/>\n+        \n+        \n+      </div>\n+    )\n+  }\n+\n+  export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761235051655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,44 +18,8 @@\n       <div className='min-h-screen bg-white'>\n         <Navbar/>\n         <Hero/>\n         <Badges/>\n-        {/* <Cards/> */}\n-        <Benefits/>\n-        <Table/>\n-          <Banner/>\n-        <Testimonials/>\n-        <LowerBanner/>\n-      \n-        <Footer/>\n-        \n-        \n-      </div>\n-    )\n-  }\n-\n-  export default App\n-  import React from 'react'\n-  import Navbar from './components/Navbar'\n- \n-import Hero from './components/Hero'\n-import Badges from './components/Badges'\n-import Benefits from './components/Benifits'\n-import Table from './components/Table'\n-import Testimonials from './components/Testimonials'\n-import Footer from './components/Footer'\n-import Banner from './components/Banner'\n-import LowerBanner from './components/LowerBanner'\n-import Cards from './components/Cards'\n-\n-\n-\n-  const App = () => {\n-    return (\n-      <div className='min-h-screen bg-white'>\n-        <Navbar/>\n-        <Hero/>\n-        <Badges/>\n         <Cards/>\n         <Benefits/>\n         <Table/>\n           <Banner/>\n"
+                },
+                {
+                    "date": 1761317211497,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,8 @@\n         <Table/>\n           <Banner/>\n         <Testimonials/>\n         <LowerBanner/>\n-      \n         <Footer/>\n         \n         \n       </div>\n"
+                }
+            ],
+            "date": 1761049513258,
+            "name": "Commit-0",
+            "content": "import React from 'react'\n\nconst App = () => {\n  return (\n    <div>App</div>\n  )\n}\n\nexport default App"
+        }
+    ]
+}

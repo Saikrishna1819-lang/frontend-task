@@ -1,0 +1,32 @@
+import React from "react";
+
+const Hero = () => {
+  return (
+     <section className=" text-white bg-[#2c4143] pt-32 pb-20">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
+            Here's to the New You
+          </h1>
+          <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+            Get a month of Recovery support this summer—phyto-nutrients, adaptogens, and daily support—all in one
+          </p>
+          <button className="px-8 py-4 bg-[#f9d65c] text-[#0a0a0a] font-semibold rounded-full hover:bg-[#f5d04a] transition-all transform hover:scale-105">
+            Creating Soon
+          </button>
+        </div>
+        <div className="flex justify-center">
+          <div className="relative">
+            <img
+              src="https://neogreens.com/wp-content/uploads/2025/09/Group-4987.png"
+              alt="NeoGreens Product"
+              className="w-full max-w-md object-contain drop-shadow-2xl"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;

@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/components/FeaturesBar.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1761059444070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1761059479332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,27 @@\n-import React from 'react'\r\n+import React from \"react\";\r\n+import { Leaf, CircleDot, Flower, FlaskConical } from \"lucide-react\";\r\n \r\n+const features = [\r\n+  { icon: <CircleDot className=\"w-5 h-5\" />, text: \"Gluten-Free\" },\r\n+  { icon: <Leaf className=\"w-5 h-5\" />, text: \"100% Vegan\" },\r\n+  { icon: <Flower className=\"w-5 h-5\" />, text: \"Organic\" },\r\n+  { icon: <FlaskConical className=\"w-5 h-5\" />, text: \"Zero Synthetic Nutrients\" },\r\n\\ No newline at end of file\n+];\r\n+\r\n const FeaturesBar = () => {\r\n   return (\r\n-    <div>FeaturesBar</div>\r\n-  )\r\n-}\r\n+    <div className=\"bg-[#f2efdc] text-[#2c4143] flex flex-wrap justify-center gap-6 py-6 px-4\">\r\n+      {features.map((item, index) => (\r\n+        <div key={index} className=\"flex items-center gap-2 text-[16px]\">\r\n+          {item.icon}\r\n+          <span>{item.text}</span>\r\n+          {index !== features.length - 1 && (\r\n+            <span className=\"mx-2 hidden sm:inline\">•</span>\r\n+          )}\r\n+        </div>\r\n+      ))}\r\n+    </div>\r\n+  );\r\n+};\r\n \r\n-export default FeaturesBar\n+export default FeaturesBar;\r\n"
+                },
+                {
+                    "date": 1761059566799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,5 +23,5 @@\n     </div>\r\n   );\r\n };\r\n \r\n-export default FeaturesBar;\n\\ No newline at end of file\n+export default FeaturesBar;\r\n"
+                }
+            ],
+            "date": 1761059444070,
+            "name": "Commit-0",
+            "content": "import React from 'react'\r\n\r\nconst FeaturesBar = () => {\r\n  return (\r\n    <div>FeaturesBar</div>\r\n  )\r\n}\r\n\r\nexport default FeaturesBar"
+        }
+    ]
+}
